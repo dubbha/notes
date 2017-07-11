@@ -1,3 +1,5 @@
 # Handy JS Notes
 
-[jest_mock_default_export](jest_mock_default_export.js)
+[obj-remove-undefined-props](obj-remove-undefined-props.js)
+[jest-mock-default-export](jest-mock-default-export.js)
+
