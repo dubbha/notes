@@ -1,5 +1,4 @@
-// A file exporting both, default and non-default exports
-
+/* A file exporting both, default and non-default exports */
 const serialize = obj =>
     Object.keys(obj)
         .map(key => [key, obj[key]].map(encodeURIComponent).join('='))
@@ -15,8 +14,7 @@ export default serialize;
 
 
 
-// Mock both, default and non-default exports
-
+/* Mock both, default and non-default exports */
 jest.mock('../../../src/js/common/utils/serialize', () => {
     const serializeFn = jest.fn(() => 'serialized_data');
     serializeFn.serializeDefinedProps = jest.fn(() => 'serialized_defined_data');
