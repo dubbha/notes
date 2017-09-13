@@ -12,5 +12,7 @@ describe('Component', () => {
     });    
 })
 
-// http://airbnb.io/enzyme/docs/api/ReactWrapper/mount.html
-// http://airbnb.io/enzyme/docs/api/ReactWrapper/unmount.html
+/*
+http://airbnb.io/enzyme/docs/api/ReactWrapper/mount.html
+http://airbnb.io/enzyme/docs/api/ReactWrapper/unmount.html
+*/
