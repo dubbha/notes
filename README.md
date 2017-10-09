@@ -5,3 +5,4 @@
 - [jest-test-component-will-unmount](jest-test-component-will-unmount.js)
 - [round-half-down](round-half-down.js)
 - [fp-arity](fp-arity.js)
+- [fp-function-names](fp-arity.js)
