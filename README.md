@@ -6,3 +6,4 @@
 - [round-half-down](round-half-down.js)
 - [fp-arity](fp-arity.js)
 - [fp-function-names](fp-arity.js)
+- [invert-binary-tree](invert-binary-tree.js)

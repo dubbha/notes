@@ -1,5 +1,5 @@
 function foo(x,y,z) {
-	return true;
+  return true;
 }
 
 console.log(foo.length); // arity = 3 - foo() expects three arguments, because it has three declared parameters
