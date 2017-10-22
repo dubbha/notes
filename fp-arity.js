@@ -1,10 +1,14 @@
-function foo(x,y,z) {
-  return true;
-}
+function foo(x,y,z) {}
 
 console.log(foo.length); // arity = 3 - foo() expects three arguments, because it has three declared parameters
 
-// This number excludes the rest parameter and only includes parameters before the first one with a default value.
+
+function unary(x) {};
+
+console.log(foo.length); // arity = 1 - a function having an arity of 1 is called a unary function
+
+
+// Function.length excludes the rest parameter and only includes parameters before the first one with a default value.
 (function f(x, y=5) {}).length;        // 1
 (function f(x, ...rest) {}).length;    // 1
 (function f({ x, y }) {}).length;      // 1

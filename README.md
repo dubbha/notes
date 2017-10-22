@@ -1,5 +1,8 @@
 ## Handy JS Notes
 
+### String
+- [string-repeated-substring-pattern](string-repeated-substring-pattern.js)
+
 ### Jest
 - [jest-mock-default-export](jest-mock-default-export.js)
 - [jest-test-component-will-unmount](jest-test-component-will-unmount.js)
