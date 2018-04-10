@@ -1,13 +1,16 @@
 ## Handy JS Notes
 
-### String
-- [string-repeated-substring-pattern](string-repeated-substring-pattern.js)
+### React
+- [react-class-properties](react-class-properties.js) [[sandbox](https://codesandbox.io/s/qz74mjjx6)]
 
 ### Jest
 - [jest-mock-default-export](jest-mock-default-export.js)
 - [jest-test-component-will-unmount](jest-test-component-will-unmount.js)
 - [jest-spyon-console-log](jest-spyon-console-log.js)
 - [jest-promise-async-await](jest-promise-async-await.js)
+
+### String
+- [string-repeated-substring-pattern](string-repeated-substring-pattern.js)
 
 ### Functional Programming
 - [fp-arity](fp-arity.js)
