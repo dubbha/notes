@@ -72,7 +72,6 @@ class Comp extends React.Component {
   }
 
   // Introduced in 16.3 (static!)
-  //
   static getDerivedStateFromProps(nextProps, prevState) {
     console.log('getDerivedStateFromProps', nextProps, prevState);
     return null;
