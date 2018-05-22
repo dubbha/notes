@@ -89,6 +89,10 @@ class Comp extends React.Component {
     console.log('componentDidUpdate', prevProps, prevState, snapshot);
   }
 
+  componentDidMount() {
+    console.log('componentDidMount');
+  }
+
   componentWillUnmount() {
     console.log('componentWillUnmount');
   }

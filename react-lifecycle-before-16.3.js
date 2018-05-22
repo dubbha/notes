@@ -49,18 +49,15 @@ class Comp extends React.Component {
     });
   };
 
-  componentWillMount() {
-    // UNSAFE_componentWillMount
+  componentWillMount() {  // UNSAFE_componentWillMount
     console.log('componentWillMount');
   }
 
-  componentWillUpdate(nextProps, nextState) {
-    // UNSAFE_componentWillUpdate
+  componentWillUpdate(nextProps, nextState) {  // UNSAFE_componentWillUpdate
     console.log('componentWillUpdate', nextProps, nextState);
   }
 
-  componentWillReceiveProps(nextProps) {
-    // UNSAFE_componentWillReceiveProps
+  componentWillReceiveProps(nextProps) {  // UNSAFE_componentWillReceiveProps
     console.log('componentWillReceiveProps', nextProps);
   }
 
@@ -71,6 +68,10 @@ class Comp extends React.Component {
 
   componentDidUpdate() {
     console.log('componentDidUpdate', this.props, this.state);
+  }
+
+  componentDidMount() {
+    console.log('componentDidMount');
   }
 
   componentWillUnmount() {
