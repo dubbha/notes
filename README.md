@@ -7,6 +7,7 @@
 
 ### Jest
 - [jest-mock-default-export](jest-mock-default-export.js)
+- [jest-mock-react-strict-mode](jest-mock-react-strict-mode.js)
 - [jest-test-component-will-unmount](jest-test-component-will-unmount.js)
 - [jest-spyon-console-log](jest-spyon-console-log.js)
 - [jest-promise-async-await](jest-promise-async-await.js)
