@@ -10,6 +10,7 @@
 - [jest-test-component-will-unmount](jest-test-component-will-unmount.js)
 - [jest-spyon-console-log](jest-spyon-console-log.js)
 - [jest-promise-async-await](jest-promise-async-await.js)
+- [jest-enzyme-wrapper-debug](jest-enzyme-wrapper-debug.js)
 
 ### String
 - [string-repeated-substring-pattern](string-repeated-substring-pattern.js)
