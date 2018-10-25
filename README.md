@@ -22,6 +22,7 @@
 
 ### Problem Solving Patterns
 - [psp-frequency-counter-same](psp-frequency-counter-same.js)
+- [psp-frequency-counter-anagram](psp-frequency-counter-anagram.js)
 
 ### Misc
 - [obj-remove-undefined-props](obj-remove-undefined-props.js)

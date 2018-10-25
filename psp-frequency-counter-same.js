@@ -14,7 +14,6 @@ const same = (numsArr, squaresArr) => {
   }, {});
 
   const numsKeys = Object.keys(numsFreq);
-  const squaresKeys = Object.keys(squaresFreq);
 
   if (numsKeys.some(key => !squaresFreq[key ** 2] || squaresFreq[key ** 2] != numsFreq[key])) return false;   // O(n)
 
