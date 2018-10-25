@@ -21,7 +21,7 @@
 - [fp-function-names](fp-arity.js)
 
 ### Problem Solving Patterns
-- [frequency-counter-same](frequency-counter-same.js)
+- [psp-frequency-counter-same](psp-frequency-counter-same.js)
 
 ### Misc
 - [obj-remove-undefined-props](obj-remove-undefined-props.js)
