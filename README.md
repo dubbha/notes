@@ -7,6 +7,7 @@
 
 ### Jest
 - [jest-mock-default-export](jest-mock-default-export.js)
+- [jest-mock-default-export-variable](jest-mock-default-export-variable.js)
 - [jest-mock-react-strict-mode](jest-mock-react-strict-mode.js)
 - [jest-test-component-will-unmount](jest-test-component-will-unmount.js)
 - [jest-spyon-console-log](jest-spyon-console-log.js)
@@ -19,10 +20,6 @@
 ### Functional Programming
 - [fp-arity](fp-arity.js)
 - [fp-function-names](fp-arity.js)
-
-### Problem Solving Patterns
-- [psp-frequency-counter-same](psp-frequency-counter-same.js)
-- [psp-frequency-counter-anagram](psp-frequency-counter-anagram.js)
 
 ### Misc
 - [obj-remove-undefined-props](obj-remove-undefined-props.js)
