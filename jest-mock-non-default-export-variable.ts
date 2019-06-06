@@ -37,7 +37,7 @@ describe('Logger', () => {
   })
 
   it('mock', () => {
-    jest.mock('./config', () => ({ config: { prop: 'foo' } }))
+    jest.doMock('./config', () => ({ config: { prop: 'foo' } }))
     const { Logger } = require('./Logger');
 
     const instance = new Logger();
@@ -45,7 +45,7 @@ describe('Logger', () => {
   })
 
   it('another mock', () => {
-    jest.mock('./config', () => ({ config: { prop: 'baz' } }))
+    jest.doMock('./config', () => ({ config: { prop: 'baz' } }))
     const { Logger } = require('./Logger');
 
     const instance = new Logger();
