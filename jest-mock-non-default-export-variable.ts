@@ -1,5 +1,4 @@
 /* config.ts */
-/* config.ts */
 interface IConfig {
   prop: string,
 }

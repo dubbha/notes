@@ -4,6 +4,8 @@
 - [react-class-properties](react-class-properties.js) [[sandbox](https://codesandbox.io/s/qz74mjjx6)]
 - [react-lifecycle-before-16.3](react-lifecycle-before-16.3.js) [[sandbox](https://codesandbox.io/s/pj6mk704j7)]
 - [react-lifecycle-after-16.3](react-lifecycle-after-16.3.js) [[sandbox](https://codesandbox.io/s/1v44qzzj7l)]
+- [react-hooks-useState-cookie](react-hooks-useState-cookie.js) [[sandbox](https://codesandbox.io/s/hooks-usestate-cookie-id9nl)]
+- [react-hooks-useCookie-custom-hook](react-hooks-useCookie-custom-hook.js) [[sandbox](https://codesandbox.io/s/hooks-usecookie-custom-hook-0xp5e)]
 
 ### Jest
 - [jest-mock-default-export](jest-mock-default-export.js)
