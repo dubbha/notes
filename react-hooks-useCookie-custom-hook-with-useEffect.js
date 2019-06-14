@@ -1,8 +1,7 @@
 /*
-  https://codesandbox.io/s/hooks-usecookie-custom-hook-with-useeffect-m8k5n
-
-  react-hooks-useCookie-custom-hook-with-useEffect
+  https://codesandbox.io/s/hooks-usecookie-custom-hook-x1ykj
     - maintain local state with custom useCookie hook
+    - set initial state with a lazy initial state function
     - manipulate browser cookie via useEffect
 */
 
@@ -14,8 +13,16 @@ import ReactDOM from "react-dom";
   https://www.slightedgecoder.com/2019/02/10/being-explicit-with-your-own-react-hook-typescript-return-type/
   const useCookie = (cookieName: string): [string, (value: string) => void, () => void] => {
 */
-const useCookie = (cookieName, initialValue) => {
-  const [value, setValue] = useState(initialValue);
+const useCookie = cookieName => {
+  const [value, setValue] = useState(() =>
+    document.cookie
+      .split("; ")
+      .reduce(
+        (acc, cur) =>
+          cur.split("=")[0] === cookieName ? `${acc}${cur.split("=")[1]}` : acc,
+        ""
+      )
+  );
 
   useEffect(() => {
     value
@@ -28,22 +35,8 @@ const useCookie = (cookieName, initialValue) => {
   return [value, setValue, resetValue];
 };
 
-export const getCurrentCookieValue = cookieName =>
-  document.cookie
-    .split("; ")
-    .reduce(
-      (acc, cur) =>
-        cur.split("=")[0] === cookieName ? `${acc}${cur.split("=")[1]}` : acc,
-      ""
-    );
-
-const cookieName = "X-Origin";
-
 export const CookieForm = () => {
-  const [cookie, setCookie, resetCookie] = useCookie(
-    cookieName,
-    getCurrentCookieValue(cookieName)
-  );
+  const [cookie, setCookie, resetCookie] = useCookie("X-Origin");
 
   return (
     <div>
