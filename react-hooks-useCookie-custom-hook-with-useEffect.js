@@ -1,5 +1,7 @@
 /*
   https://codesandbox.io/s/hooks-usecookie-custom-hook-with-useeffect-m8k5n
+
+  react-hooks-useCookie-custom-hook-with-useEffect
     - maintain local state with custom useCookie hook
     - manipulate browser cookie via useEffect
 */
@@ -12,15 +14,7 @@ import ReactDOM from "react-dom";
   https://www.slightedgecoder.com/2019/02/10/being-explicit-with-your-own-react-hook-typescript-return-type/
   const useCookie = (cookieName: string): [string, (value: string) => void, () => void] => {
 */
-const useCookie = cookieName => {
-  const initialValue = document.cookie
-    .split("; ")
-    .reduce(
-      (acc, cur) =>
-        cur.split("=")[0] === cookieName ? `${acc}${cur.split("=")[1]}` : acc,
-      ""
-    );
-
+const useCookie = (cookieName, initialValue) => {
   const [value, setValue] = useState(initialValue);
 
   useEffect(() => {
@@ -34,8 +28,22 @@ const useCookie = cookieName => {
   return [value, setValue, resetValue];
 };
 
+export const getCurrentCookieValue = cookieName =>
+  document.cookie
+    .split("; ")
+    .reduce(
+      (acc, cur) =>
+        cur.split("=")[0] === cookieName ? `${acc}${cur.split("=")[1]}` : acc,
+      ""
+    );
+
+const cookieName = "X-Origin";
+
 export const CookieForm = () => {
-  const [cookie, setCookie, resetCookie] = useCookie("X-Origin");
+  const [cookie, setCookie, resetCookie] = useCookie(
+    cookieName,
+    getCurrentCookieValue(cookieName)
+  );
 
   return (
     <div>
