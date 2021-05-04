@@ -15,10 +15,8 @@ const mergedUniqueUsers = Object.values(
 );
 
 console.log(mergedUniqueUsers);
-/*
-  [
-    { id: 'uid1', name: 'John' },
-    { id: 'uid2', name: 'Bill' },
-    { id: 'uid3', name: 'Mary' },
-  ]
-*/
+// [
+//   { id: 'uid1', name: 'John' },
+//   { id: 'uid2', name: 'Bill' },
+//   { id: 'uid3', name: 'Mary' },
+// ]
